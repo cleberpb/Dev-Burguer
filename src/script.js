@@ -8,3 +8,7 @@ const closeModalBtn = document.getElementById("close-modal-btn");
 const cartCounter = document.getElementById("cart-count");
 const addressInput = document.getElementById("address");
 const addressWarn = document.getElementById("address-warn");
+
+cartBtn.addEventListener("click", function(){
+    cartModal.style.display = "flex";
+});
