@@ -125,3 +125,20 @@ function removeItemCart(name) {
     }
 
 }
+
+// Pegar o que foi digitado no input
+addressInput.addEventListener("input", function (event) {
+    let inputValue = event.target.value;
+    addressInput.classList.remove("border-red-500");
+    addressWarn.classList.add("hidden");
+  
+})
+
+checkoutBtn.addEventListener("click", function () {
+    if (cart.length === 0) return;
+    if (addressInput.value === "") {
+        addressWarn.classList.remove("hidden");
+        addressInput.classList.add("border-red-500");
+
+    }
+})
